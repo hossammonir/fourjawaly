@@ -1,0 +1,31 @@
+{
+    "name": "hossammonir/fourjawaly",
+    "description": "FourJawaly SMS",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "HossamMonir\\FourJawaly\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Hossam Monir",
+            "email": "hey@digitaltunnel.net"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "laravel/framework": "^10.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+              "HossamMonir\\FourJawaly\\FourJawalyServiceProvider"
+            ],
+            "aliases": {
+                "FourJawaly": "HossamMonir\\FourJawaly\\Facades\\FourJawaly"
+            }
+        }
+    }
+}
